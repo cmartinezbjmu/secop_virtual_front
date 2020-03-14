@@ -12,8 +12,6 @@ import "../assets/css/style.scss";
 import "../assets/css/responsive.scss";
 
 //Component Import
-import HomeOne from "../pages/HomeOne";
-import HomeTwo from "../pages/HomeTwo";
 import HomeThree from "../pages/HomeThree";
 
 class App extends Component {
@@ -23,9 +21,7 @@ class App extends Component {
         <div>
           <Page loader={"bubble-spin"} color={"#71c21b"} size={9}>
             <Switch>
-              <Route path="/home-three" component={HomeThree} />/
-              <Route path="/home-two" component={HomeTwo} />
-              <Route path="/" component={HomeOne} />
+              <Route path="/" component={HomeThree} />
             </Switch>
           </Page>
         </div>
